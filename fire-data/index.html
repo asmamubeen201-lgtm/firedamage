@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fire Damage Data — Costs, City Risk & Live Alerts | [Brand]</title>
+<meta name="description" content="Real fire damage costs, Texas city fire risk, and live fire-weather alerts. Seeded city data, NOAA live alerts, Census/FIRMS/AirNow ready. Call (800) 555-0147.">
+<link rel="canonical" href="https://example.com/fire-data/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where does this data come from?","acceptedAnswer":{"@type":"Answer","text":"Costs come from our seeded national service ranges (Angi Sep 2026 anchor: $27,477 average job). City risk, population, housing era and Spanish-speaking share come from our curated Texas seed data. Fire-weather alerts come live from NOAA on every page load. Census, NASA FIRMS and AirNow panels activate when free API keys are added."}},{"@type":"Question","name":"Are these costs real quotes?","acceptedAnswer":{"@type":"Answer","text":"No — they are typical national ranges. Your exact price depends on home size, smoke type and how far water spread. Every job starts with a free on-site assessment and a flat approved scope."}},{"@type":"Question","name":"Why is Austin the highest-risk Texas city here?","acceptedAnswer":{"@type":"Answer","text":"Austin sits on the Hill Country wildland-urban interface, where homes meet dry brush. Our seed data marks Austin wildfire risk high, five West Texas and Gulf cities moderate, and the other twelve low."}},{"@type":"Question","name":"How often do the live alerts update?","acceptedAnswer":{"@type":"Answer","text":"Every time the page loads, straight from the National Weather Service. No key is needed and nothing is cached or guessed."}}]}</script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1a1a1a;background:#fff}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .kicker{background:#b91c1c;color:#fff;text-align:center;padding:10px 16px;font-weight:700;font-size:14px;letter-spacing:.4px}
+  .kicker a{color:#fff}
+  header.hero{padding:34px 0 10px}
+  h1{font-size:32px;line-height:1.2;margin-bottom:14px}
+  h2{font-size:24px;margin:38px 0 14px;padding-top:6px;border-top:3px solid #b91c1c}
+  h2:first-of-type{border-top:none;margin-top:26px}
+  h3{font-size:19px;margin:22px 0 10px}
+  h4{font-size:16px;margin:16px 0 8px}
+  p{margin:0 0 14px}
+  .lede{font-size:18px;color:#333}
+  .pricestrip{background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px 18px;margin:18px 0;font-size:15px}
+  .trustchips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+  .trustchips span{background:#f3f4f6;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:600}
+  .statchips{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+  .statchip{background:#111827;color:#fff;border-radius:10px;padding:12px 18px;text-align:center;min-width:130px}
+  .statchip b{display:block;font-size:22px}
+  .statchip small{font-size:12px;color:#d1d5db}
+  .signs{list-style:none;counter-reset:s}
+  .signs li{counter-increment:s;margin:0 0 16px;padding-left:52px;position:relative}
+  .signs li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:0;font-size:22px;font-weight:800;color:#b91c1c}
+  .signs b{display:block}
+  .steps{list-style:none}
+  .steps li{margin:0 0 10px;padding-left:30px;position:relative}
+  .steps li::before{content:"✓";position:absolute;left:0;color:#15803d;font-weight:800}
+  .opt{border:1px solid #e5e7eb;border-radius:10px;padding:18px;margin:14px 0}
+  .opt .tag{display:inline-block;background:#b91c1c;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:.5px;margin-bottom:8px}
+  .opt .price{font-size:20px;font-weight:800;margin:6px 0}
+  .faq{border-bottom:1px solid #e5e7eb;padding:14px 0}
+  .faq b{display:block;margin-bottom:6px}
+  .job{border-left:4px solid #b91c1c;background:#fafafa;padding:14px 18px;margin:14px 0;border-radius:0 8px 8px 0}
+  .job small{color:#6b7280}
+  .cta{background:#111827;color:#fff;border-radius:12px;padding:28px 22px;text-align:center;margin:40px 0}
+  .cta h2{border:none;color:#fff;margin:0 0 10px;padding:0}
+  .cta p{color:#d1d5db}
+  .btn{display:inline-block;background:#b91c1c;color:#fff;font-weight:800;font-size:20px;padding:14px 34px;border-radius:10px;text-decoration:none;margin-top:10px}
+  .btn:hover{background:#991b1b}
+  .sticky-call{position:fixed;bottom:0;left:0;right:0;background:#b91c1c;color:#fff;text-align:center;padding:14px;font-size:19px;font-weight:800;text-decoration:none;z-index:99;display:block}
+  body{padding-bottom:64px}
+  .hood{margin:0 0 18px}
+  .season{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .season div{background:#f9fafb;border-radius:8px;padding:14px}
+  .related{font-size:14px;color:#6b7280;margin:26px 0}
+  .related a{color:#b91c1c}
+  footer{border-top:1px solid #e5e7eb;margin-top:30px;padding:20px 0;font-size:13px;color:#6b7280}
+  @media(max-width:640px){h1{font-size:26px}.season{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="kicker">📞 24/7 Emergency Fire Damage Help — <a href="tel:+18005550147">Call (800) 555-0147 Now</a></div>
+<div class="wrap">
+<header class="hero">
+<h1>Fire Damage Data: Costs, Risk &amp; Live Alerts</h1>
+<p class="lede">Real numbers, not guesses. Costs come from our seeded service ranges. City risk comes from our curated Texas seed data. Fire-weather alerts come live from NOAA on every page load — no key needed.</p>
+<div class="pricestrip"><b>National anchor:</b> average fire restoration job <b>$27,477</b> · typical range <b>$3,083–$52,031</b> (Angi, Sep 2026) · <b>94% of calls happen within 4 hours</b> of the incident</div>
+<div class="trustchips"><span>📊 Seeded data, sourced</span><span>📡 Live NOAA alerts</span><span>🚫 No invented stats</span></div>
+</header>
+
+<h2>What Fire Damage Costs — Every Service, Compared</h2>
+<p>Typical national ranges from our seed data. Your exact price depends on home size, smoke type and how far water spread — every job starts with a free on-site assessment and a flat approved scope.</p>
+<h3>Most common jobs — under $5,000</h3>
+<div id="chart-costs-common"><p>Loading chart…</p></div>
+<h3>Major damage — $5,000 and up</h3>
+<div id="chart-costs-major"><p>Loading chart…</p></div>
+<p><small>Source: seeded national service ranges (see <a href="../cost-guide/">Cost Guide</a>). Commercial and wildfire jobs vary the most — always get an on-site assessment.</small> <a href="../calculator/">Try the cost calculator →</a></p>
+
+<h2>Texas Fire Risk by City</h2>
+<p>Wildfire risk from our curated seed data: <b>1 city high</b> (Austin — Hill Country wildland interface), <b>5 moderate</b> (El Paso, Corpus Christi, Lubbock, Amarillo, Midland — West Texas grass fires and Gulf fringe), <b>12 low</b>. This is wildfire risk only — kitchen and electrical fires happen in every city.</p>
+<div id="chart-risk"><p>Loading chart…</p></div>
+<div id="table-cities"><p>Loading table…</p></div>
+<div id="census-note"><p><small>Populations are seeded 2020-census approximations.</small></p></div>
+
+<h2>Live: Fire-Weather Alerts in Texas — NOAA</h2>
+<div id="live-nws"><p>Checking live alerts from NOAA…</p></div>
+<p><small>Source: National Weather Service, <a href="https://api.weather.gov/" target="_blank" rel="noopener">api.weather.gov</a> — free, no key, fetched live on every page load.</small></p>
+
+<h2>More Live Data — Free Keys</h2>
+<p>Three more live panels are wired and ready. Each key is free (2-minute signup) — paste it into <code>site/assets/api-config.js</code> and the panel activates. Until then, no number is shown here. We do not guess.</p>
+<div class="opt"><span class="tag">FREE KEY · US CENSUS</span><h3>Exact City Populations</h3><p>Replaces our seeded 2020-census approximations with live 2022 ACS 5-year values for all 18 Texas cities.</p><div id="census-panel"><p>Get a free key: <a href="https://api.census.gov/data/key_signup.html" target="_blank" rel="noopener">api.census.gov/data/key_signup.html</a></p></div></div>
+<div class="opt"><span class="tag">FREE KEY · NASA FIRMS</span><h3>Live Fire Detections — Last 24 Hours</h3><p>Satellite hotspot count for Texas (VIIRS), updated every page load.</p><div id="firms-panel"><p>Live fire detections need a free NASA FIRMS key — get one at <a href="https://firms.modaps.eosdis.nasa.gov/api/area/" target="_blank" rel="noopener">firms.modaps.eosdis.nasa.gov</a>, then paste it into <code>site/assets/api-config.js</code>.</p></div></div>
+<div class="opt"><span class="tag">FREE KEY · AIRNOW (EPA)</span><h3>Live Smoke &amp; Air Quality — Houston</h3><p>Current AQI and PM2.5 for the Houston anchor ZIP, so wildfire-smoke days show real numbers.</p><div id="airnow-panel"><p>Live smoke / air-quality data needs a free AirNow key — get one at <a href="https://www.airnowapi.org/" target="_blank" rel="noopener">airnowapi.org</a>, then paste it into <code>site/assets/api-config.js</code>.</p></div></div>
+
+<h2>Quick Answers — Fire Damage Data</h2>
+<div class="faq"><b>Where does this data come from?</b><p>Costs come from our seeded national service ranges (Angi Sep 2026 anchor: $27,477 average job). City risk, population, housing era and Spanish-speaking share come from our curated Texas seed data. Fire-weather alerts come live from NOAA on every page load. Census, NASA FIRMS and AirNow panels activate when free API keys are added.</p></div>
+<div class="faq"><b>Are these costs real quotes?</b><p>No — they are typical national ranges. Your exact price depends on home size, smoke type and how far water spread. Every job starts with a free on-site assessment and a flat approved scope.</p></div>
+<div class="faq"><b>Why is Austin the highest-risk Texas city here?</b><p>Austin sits on the Hill Country wildland-urban interface, where homes meet dry brush. Our seed data marks Austin wildfire risk high, five West Texas and Gulf cities moderate, and the other twelve low.</p></div>
+<div class="faq"><b>How often do the live alerts update?</b><p>Every time the page loads, straight from the National Weather Service. No key is needed and nothing is cached or guessed.</p></div>
+
+<div class="cta"><h2>Fire Damage in Texas? Don't Wait.</h2><p>One call dispatches emergency board-up, soot and smoke cleanup, and odor removal — and we handle your insurance paperwork. 24/7, statewide.</p><a class="btn" href="tel:+18005550147">📞 Call (800) 555-0147</a></div>
+<p class="related">Related: <a href="../cost-guide/">Cost Guide</a> · <a href="../calculator/">Cost Calculator</a> · <a href="../texas/">Fire Damage Restoration Texas</a> · <a href="../texas/houston-tx/">Houston</a> · <a href="../insurance-claims/">Insurance Claims</a></p>
+<footer>24/7 emergency fire damage restoration content hub. If you have an active fire, call 911 first. Data: seeded city/service facts (2020-census approximations where marked), NOAA live alerts, Angi Sep 2026 price anchor.</footer>
+</div>
+<a class="sticky-call" href="tel:+18005550147">📞 Call Now — (800) 555-0147</a>
+<script src="../assets/api-config.js"></script>
+<script src="../assets/charts.js"></script>
+<script>FDCharts.initDataHub('TX');</script>
+</body>
+</html>

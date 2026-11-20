@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fire Damage Cost Calculator — [Brand] | 24/7 Emergency Restoration</title>
+<meta name="description" content="Estimate fire damage restoration costs in seconds. Pick the damage type, home size, and city — get a range from published price data, then call for an exact on-site quote.">
+<link rel="canonical" href="https://example.com/calculator/">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1a1a1a;background:#fff}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .kicker{background:#b91c1c;color:#fff;text-align:center;padding:10px 16px;font-weight:700;font-size:14px;letter-spacing:.4px}
+  .kicker a{color:#fff}
+  header.hero{padding:34px 0 10px}
+  h1{font-size:32px;line-height:1.2;margin-bottom:14px}
+  h2{font-size:24px;margin:38px 0 14px;padding-top:6px;border-top:3px solid #b91c1c}
+  h2:first-of-type{border-top:none;margin-top:26px}
+  h3{font-size:19px;margin:22px 0 10px}
+  h4{font-size:16px;margin:16px 0 8px}
+  p{margin:0 0 14px}
+  .lede{font-size:18px;color:#333}
+  .pricestrip{background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px 18px;margin:18px 0;font-size:15px}
+  .trustchips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+  .trustchips span{background:#f3f4f6;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:600}
+  .statchips{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+  .statchip{background:#111827;color:#fff;border-radius:10px;padding:12px 18px;text-align:center;min-width:130px}
+  .statchip b{display:block;font-size:22px}
+  .statchip small{font-size:12px;color:#d1d5db}
+  .signs{list-style:none;counter-reset:s}
+  .signs li{counter-increment:s;margin:0 0 16px;padding-left:52px;position:relative}
+  .signs li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:0;font-size:22px;font-weight:800;color:#b91c1c}
+  .signs b{display:block}
+  .steps{list-style:none}
+  .steps li{margin:0 0 10px;padding-left:30px;position:relative}
+  .steps li::before{content:"✓";position:absolute;left:0;color:#15803d;font-weight:800}
+  .opt{border:1px solid #e5e7eb;border-radius:10px;padding:18px;margin:14px 0}
+  .opt .tag{display:inline-block;background:#b91c1c;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:.5px;margin-bottom:8px}
+  .opt .price{font-size:20px;font-weight:800;margin:6px 0}
+  .faq{border-bottom:1px solid #e5e7eb;padding:14px 0}
+  .faq b{display:block;margin-bottom:6px}
+  .job{border-left:4px solid #b91c1c;background:#fafafa;padding:14px 18px;margin:14px 0;border-radius:0 8px 8px 0}
+  .job small{color:#6b7280}
+  .cta{background:#111827;color:#fff;border-radius:12px;padding:28px 22px;text-align:center;margin:40px 0}
+  .cta h2{border:none;color:#fff;margin:0 0 10px;padding:0}
+  .cta p{color:#d1d5db}
+  .btn{display:inline-block;background:#b91c1c;color:#fff;font-weight:800;font-size:20px;padding:14px 34px;border-radius:10px;text-decoration:none;margin-top:10px}
+  .btn:hover{background:#991b1b}
+  .sticky-call{position:fixed;bottom:0;left:0;right:0;background:#b91c1c;color:#fff;text-align:center;padding:14px;font-size:19px;font-weight:800;text-decoration:none;z-index:99;display:block}
+  body{padding-bottom:64px}
+  .hood{margin:0 0 18px}
+  .season{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .season div{background:#f9fafb;border-radius:8px;padding:14px}
+  .related{font-size:14px;color:#6b7280;margin:26px 0}
+  .related a{color:#b91c1c}
+  footer{border-top:1px solid #e5e7eb;margin-top:30px;padding:20px 0;font-size:13px;color:#6b7280}
+  @media(max-width:640px){h1{font-size:26px}.season{grid-template-columns:1fr}}
+  /* Calculator-only additions */
+  label{display:block;font-weight:700;margin:22px 0 8px}
+  select{width:100%;padding:12px 14px;font-size:16px;border:1px solid #d1d5db;border-radius:8px;background:#fff;font-family:inherit}
+  input[type=range]{width:100%;accent-color:#b91c1c}
+  .size-readout{font-size:20px;font-weight:800}
+  .result{border:2px solid #b91c1c;border-radius:12px;padding:22px;margin:26px 0;background:#fef2f2}
+  .result .range{font-size:34px;font-weight:800;line-height:1.15}
+  .result .svc{font-size:15px;color:#333;margin-top:8px}
+  .result .local{font-size:14px;color:#555;margin-top:10px}
+  .disclaimer{font-size:13px;color:#6b7280;margin-top:10px}
+</style>
+</head>
+<body>
+
+<div class="kicker">🔥 24/7 EMERGENCY FIRE RESPONSE — TEXAS · <a href="tel:18005550147">CALL (800) 555-0147</a></div>
+
+<div class="wrap">
+<header class="hero">
+  <h1>Fire Damage Cost Calculator</h1>
+  <p class="lede">Get a realistic cost range in seconds — then call for an exact on-site quote. No forms, no email, no waiting.</p>
+
+  <div class="pricestrip"><b>National context (Angi, Sep 2026):</b> average fire damage restoration job $27,477 · typical range $3,083–$52,031 · $4–$7 per sq ft.</div>
+
+  <div class="trustchips">
+    <span>✓ 24/7 Emergency Dispatch</span>
+    <span>✓ Insurance Claim Help</span>
+    <span>✓ Licensed &amp; Insured Pros</span>
+    <span>✓ Written Warranty</span>
+  </div>
+</header>
+
+<!-- CALCULATOR -->
+<h2>Your Estimate — 3 Steps</h2>
+
+<label for="service">1. What kind of damage?</label>
+<select id="service"></select>
+
+<label for="size">2. How big is the home? <span class="size-readout" id="sizeReadout">1,500 sq ft</span></label>
+<input type="range" id="size" min="500" max="5000" step="50" value="1500">
+
+<label for="city">3. Which city?</label>
+<select id="city"></select>
+
+<div class="result" id="result" aria-live="polite"></div>
+
+<div class="cta">
+  <h2>Exact Quote Needs an On-Site Assessment</h2>
+  <p>Every fire is different — damage hides behind walls, in ducts, and under floors. A free on-site assessment gives you a flat, written scope before any work begins.</p>
+  <a class="btn" href="tel:18005550147">📞 Call (800) 555-0147 Now</a>
+  <p style="margin-top:12px;font-size:13px">24/7 emergency dispatch · Free on-site assessment · Insurance claim help</p>
+</div>
+
+<h2>How the Estimate Works</h2>
+<p>Ranges come from published national price data for each service (see the seed price table). The calculator scales the range by home size only — it never invents a price. City selection changes only the local context note, never the price, because published city-level prices do not exist.</p>
+<p class="disclaimer">Estimate only, from published ranges — not a quote. Final pricing depends on the on-site assessment.</p>
+</div>
+
+<footer><div class="wrap">
+  [Brand] — 24/7 emergency fire damage restoration. If you have an active fire, call 911 first.
+</div></footer>
+
+<a class="sticky-call" href="tel:18005550147">📞 Tap to Call — 24/7 Fire Response</a>
+
+<script>
+/* ============================================================
+   FORMULA (rule-based, no AI, no network calls):
+     sizeFactor = clamp(sqft / 1500, 0.5, 2.5)
+       — 1,500 sq ft is the baseline home; factor is clamped so
+         tiny homes never drop below half the range and very
+         large homes never exceed 2.5x the range.
+     low  = roundTo50(price_min * sizeFactor)
+     high = min(roundTo50(price_max * sizeFactor), price_max * 1.5)
+       — the high end is capped at 1.5x the service max, so the
+         estimate can never run away from the published range.
+     low  = min(low, high)
+   Prices are the national ranges from seed_services.sql.
+   City affects ONLY the local context note below the estimate
+   (fire dept + common causes from seed_texas_cities.sql) —
+   never the price, because no published city-level prices exist.
+   ============================================================ */
+
+// --- Data: copied from supabase/seed_services.sql (national ranges) ---
+var SERVICES = [
+  {slug:"board-up-services",name:"Board-Up Services",group:"Emergency Fire Cleanup",min:300,max:900,desc:"Emergency plywood/steel boarding of windows, doors and openings to secure a fire-damaged property within hours.",dur:"Usually same-day, 2-4 hours on site"},
+  {slug:"roof-tarping",name:"Roof Tarping",group:"Emergency Fire Cleanup",min:500,max:1500,desc:"Heavy-duty tarping over fire-damaged roofing to stop water intrusion until permanent repair.",dur:"Same-day in most cases"},
+  {slug:"fire-water-extraction",name:"Fire Water Extraction",group:"Emergency Fire Cleanup",min:1000,max:3500,desc:"High-volume extraction of water left by firefighting efforts — the step most owners forget until mold starts.",dur:"1-2 days including initial drying"},
+  {slug:"property-securing",name:"Property Securing",group:"Emergency Fire Cleanup",min:300,max:800,desc:"Full perimeter securing: fencing, lock changes, temporary power shutoff coordination.",dur:"Same-day"},
+  {slug:"soot-removal",name:"Soot Removal",group:"Smoke and Soot Cleanup",min:1000,max:4000,desc:"Specialized dry and wet cleaning of soot from walls, ceilings and surfaces — different soot types need different chemistry.",dur:"1-3 days depending on spread"},
+  {slug:"wall-ceiling-cleaning",name:"Wall and Ceiling Cleaning",group:"Smoke and Soot Cleanup",min:800,max:3000,desc:"Deep cleaning of smoke-stained walls and ceilings, including primer-sealing before repaint.",dur:"1-2 days"},
+  {slug:"hvac-duct-cleaning",name:"HVAC Duct Cleaning",group:"Smoke and Soot Cleanup",min:300,max:700,desc:"Full duct system cleaning after smoke exposure — otherwise the HVAC re-contaminates the whole house every cycle.",dur:"Half day"},
+  {slug:"smoke-residue-removal",name:"Smoke Residue Removal",group:"Smoke and Soot Cleanup",min:1000,max:3500,desc:"Removal of sticky protein and wet-smoke residues that standard cleaning cannot lift.",dur:"1-3 days"},
+  {slug:"thermal-fogging",name:"Thermal Fogging",group:"Smoke Odor Removal",min:400,max:1200,desc:"Heated deodorizing fog that penetrates porous materials where smoke odor hides — the professional standard for odor removal.",dur:"Half to full day"},
+  {slug:"ozone-treatment",name:"Ozone Treatment",group:"Smoke Odor Removal",min:300,max:900,desc:"Ozone gas treatment that oxidizes odor molecules in unoccupied spaces. Powerful but must be done by pros.",dur:"1-2 days including airing"},
+  {slug:"kitchen-fire-odor-removal",name:"Kitchen Fire Odor Removal",group:"Smoke Odor Removal",min:500,max:2000,desc:"Protein-smoke odor is the hardest to remove — invisible residue, unbearable smell. Dedicated treatment protocol.",dur:"1-2 days"},
+  {slug:"wildfire-smoke-odor-removal",name:"Wildfire Smoke Odor Removal",group:"Smoke Odor Removal",min:1000,max:4000,desc:"Whole-home wildfire smoke remediation: HVAC, attic insulation, soft contents and surfaces.",dur:"2-4 days"},
+  {slug:"pack-out-storage",name:"Pack-Out and Storage",group:"Contents Cleaning",min:1000,max:5000,desc:"Catalogued removal, off-site cleaning and climate-controlled storage of salvageable belongings during restoration.",dur:"Pack-out day + storage duration"},
+  {slug:"electronics-cleaning",name:"Electronics Cleaning",group:"Contents Cleaning",min:200,max:800,desc:"Specialized decontamination of smoke-exposed electronics — corrosion starts within hours of exposure.",dur:"Varies by item count"},
+  {slug:"clothing-textile-cleaning",name:"Clothing and Textile Cleaning",group:"Contents Cleaning",min:300,max:1500,desc:"Expert-grade (ozone/ultrasonic) cleaning of smoke-damaged clothing, drapes and upholstery.",dur:"3-7 days typical turnaround"},
+  {slug:"document-restoration",name:"Document Restoration",group:"Contents Cleaning",min:500,max:2500,desc:"Freeze-drying and restoration of water/fire-damaged documents, photos and books.",dur:"1-3 weeks for severe cases"},
+  {slug:"kitchen-fire-damage",name:"Kitchen Fire Damage",group:"Fire Damage by Property Type",min:2000,max:8000,desc:"The #1 residential fire type: grease and appliance fires with heavy protein-smoke contamination.",dur:"3-10 days typical"},
+  {slug:"apartment-fire-damage",name:"Apartment Fire Damage",group:"Fire Damage by Property Type",min:1500,max:6000,desc:"Multi-unit coordination: your unit, common areas, neighbor units, and landlord/HOA requirements.",dur:"Varies by building management"},
+  {slug:"commercial-fire-damage",name:"Commercial Fire Damage",group:"Fire Damage by Property Type",min:5000,max:50000,desc:"Business-interruption-first restoration: code compliance, documentation for business-interruption claims.",dur:"Weeks; phased to reopen fast"},
+  {slug:"wildfire-damage",name:"Wildfire Damage",group:"Fire Damage by Property Type",min:5000,max:30000,desc:"Exterior + interior wildfire recovery: ember damage, smoke infiltration, landscaping and defensible-space reset.",dur:"1-4 weeks"}
+];
+
+// --- Data: copied from supabase/seed_texas_cities.sql (local context only) ---
+var CITIES = [
+  {slug:"houston-tx",name:"Houston",dept:"Houston Fire Department",causes:"kitchen/cooking fires, electrical fires in pre-1970 bungalows, lightning strikes in spring storms"},
+  {slug:"dallas-tx",name:"Dallas",dept:"Dallas Fire-Rescue",causes:"kitchen/cooking fires, electrical fires in pre-1960 homes, spring lightning strikes"},
+  {slug:"fort-worth-tx",name:"Fort Worth",dept:"Fort Worth Fire Department",causes:"kitchen/cooking fires, electrical in historic Stockyards-area buildings, space heaters in winter cold snaps"},
+  {slug:"san-antonio-tx",name:"San Antonio",dept:"San Antonio Fire Department",causes:"kitchen/cooking fires, electrical fires in 1800s–early 1900s historic homes, candle fires"},
+  {slug:"austin-tx",name:"Austin",dept:"Austin Fire Department",causes:"wildfire ember intrusion in west Austin hill country, kitchen/cooking fires, electrical in historic Hyde Park homes"},
+  {slug:"el-paso-tx",name:"El Paso",dept:"El Paso Fire Department",causes:"kitchen/cooking fires, swamp-cooler electrical issues, desert brush fires on the urban fringe"},
+  {slug:"arlington-tx",name:"Arlington",dept:"Arlington Fire Department",causes:"kitchen/cooking fires, electrical in 1970s-80s homes, spring hail/lightning"},
+  {slug:"plano-tx",name:"Plano",dept:"Plano Fire-Rescue",causes:"kitchen/cooking fires, dryer fires in dense apartment stock, lightning in spring storms"},
+  {slug:"irving-tx",name:"Irving",dept:"Irving Fire Department",causes:"kitchen/cooking fires, electrical in 1970s-80s stock, apartment-complex fires"},
+  {slug:"corpus-christi-tx",name:"Corpus Christi",dept:"Corpus Christi Fire Department",causes:"kitchen/cooking fires, hurricane-season electrical damage, salt-air corrosion of electrical panels"},
+  {slug:"lubbock-tx",name:"Lubbock",dept:"Lubbock Fire Rescue",causes:"kitchen/cooking fires, West Texas dust-storm driven grass fires on the fringe, space heaters in winter cold snaps"},
+  {slug:"amarillo-tx",name:"Amarillo",dept:"Amarillo Fire Department",causes:"heating-equipment fires in hard winters, kitchen/cooking fires, Panhandle wildfire/grass-fire interface risk"},
+  {slug:"laredo-tx",name:"Laredo",dept:"Laredo Fire Department",causes:"kitchen/cooking fires, electrical in 1800s–early 1900s downtown buildings, extreme-heat electrical overload in summer"},
+  {slug:"frisco-tx",name:"Frisco",dept:"Frisco Fire Department",causes:"kitchen/cooking fires in dense new apartments, construction-phase fires in active builds, lightning in spring storms"},
+  {slug:"mckinney-tx",name:"McKinney",dept:"McKinney Fire Department",causes:"kitchen/cooking fires, electrical in 1800s downtown-square buildings, spring lightning"},
+  {slug:"denton-tx",name:"Denton",dept:"Denton Fire Department",causes:"kitchen/cooking fires in student rentals, electrical in 1890s–1920s square buildings, candle/incense fires in rentals"},
+  {slug:"waco-tx",name:"Waco",dept:"Waco Fire Department",causes:"kitchen/cooking fires, electrical in early-1900s Austin Avenue homes, space heaters in winter"},
+  {slug:"midland-tx",name:"Midland",dept:"Midland Fire Department",causes:"kitchen/cooking fires, West Texas wind-driven grass fires on the fringe, electrical in 1970s-80s stock"}
+];
+
+// --- Build the selects ---
+var serviceSel = document.getElementById("service");
+var groups = {};
+SERVICES.forEach(function (s) { (groups[s.group] = groups[s.group] || []).push(s); });
+Object.keys(groups).forEach(function (g) {
+  var og = document.createElement("optgroup");
+  og.label = g;
+  groups[g].forEach(function (s) {
+    var o = document.createElement("option");
+    o.value = s.slug; o.textContent = s.name;
+    og.appendChild(o);
+  });
+  serviceSel.appendChild(og);
+});
+serviceSel.value = "soot-removal";
+
+var citySel = document.getElementById("city");
+CITIES.forEach(function (c) {
+  var o = document.createElement("option");
+  o.value = c.slug; o.textContent = c.name + ", TX";
+  citySel.appendChild(o);
+});
+var other = document.createElement("option");
+other.value = "other"; other.textContent = "Other / outside Texas";
+citySel.appendChild(other);
+citySel.value = "houston-tx";
+
+// --- Formula ---
+function round50(n) { return Math.round(n / 50) * 50; }
+function money(n) { return "$" + n.toLocaleString("en-US"); }
+
+function estimate() {
+  var svc = SERVICES.filter(function (s) { return s.slug === serviceSel.value; })[0];
+  var sqft = parseInt(document.getElementById("size").value, 10);
+  var city = CITIES.filter(function (c) { return c.slug === citySel.value; })[0];
+  document.getElementById("sizeReadout").textContent = sqft.toLocaleString("en-US") + " sq ft";
+
+  var factor = Math.min(2.5, Math.max(0.5, sqft / 1500));
+  var low = round50(svc.min * factor);
+  var high = Math.min(round50(svc.max * factor), svc.max * 1.5);
+  low = Math.min(low, high);
+
+  var local = city
+    ? "<b>In " + city.name + ":</b> " + city.dept + " responds to fires commonly caused by " + city.causes + "."
+    : "<b>Outside Texas:</b> this range uses national published prices — local rates vary by market.";
+
+  document.getElementById("result").innerHTML =
+    "<h3 style='margin-top:0'>" + svc.name + " — estimated range</h3>" +
+    "<div class='range'>" + money(low) + " – " + money(high) + "</div>" +
+    "<p class='svc'>" + svc.desc + " Typical duration: " + svc.dur + ".</p>" +
+    "<p class='local'>" + local + "</p>" +
+    "<p><a class='btn' href='tel:18005550147'>📞 Call (800) 555-0147 for an Exact Quote</a></p>" +
+    "<p class='disclaimer'>Estimate only, from published ranges — not a quote. An exact quote needs a free on-site assessment.</p>";
+}
+
+serviceSel.addEventListener("change", estimate);
+citySel.addEventListener("change", estimate);
+document.getElementById("size").addEventListener("input", estimate);
+estimate();
+</script>
+</body>
+</html>
