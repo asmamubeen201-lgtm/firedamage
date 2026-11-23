@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://firedamage.vercel.app/about/</loc></url>
   <url><loc>https://firedamage.vercel.app/apartment-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/arizona/</loc></url>
+  <url><loc>https://firedamage.vercel.app/arizona/mesa-az/</loc></url>
+  <url><loc>https://firedamage.vercel.app/arizona/phoenix-az/</loc></url>
+  <url><loc>https://firedamage.vercel.app/arizona/scottsdale-az/</loc></url>
+  <url><loc>https://firedamage.vercel.app/arizona/tucson-az/</loc></url>
   <url><loc>https://firedamage.vercel.app/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/calculator/</loc></url>
+  <url><loc>https://firedamage.vercel.app/california/</loc></url>
+  <url><loc>https://firedamage.vercel.app/california/los-angeles-ca/</loc></url>
+  <url><loc>https://firedamage.vercel.app/california/sacramento-ca/</loc></url>
+  <url><loc>https://firedamage.vercel.app/california/san-diego-ca/</loc></url>
+  <url><loc>https://firedamage.vercel.app/california/san-jose-ca/</loc></url>
   <url><loc>https://firedamage.vercel.app/clothing-textile-cleaning/</loc></url>
   <url><loc>https://firedamage.vercel.app/commercial-fire-damage/</loc></url>
   <url><loc>https://firedamage.vercel.app/contact/</loc></url>
@@ -14,9 +24,20 @@
   <url><loc>https://firedamage.vercel.app/emergency-fire-cleanup/</loc></url>
   <url><loc>https://firedamage.vercel.app/faq/</loc></url>
   <url><loc>https://firedamage.vercel.app/fire-damage-by-property-type/</loc></url>
+  <url><loc>https://firedamage.vercel.app/fire-damage-repair/</loc></url>
   <url><loc>https://firedamage.vercel.app/fire-data/</loc></url>
   <url><loc>https://firedamage.vercel.app/fire-water-extraction/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/fort-lauderdale-fl/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/miami-fl/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/orlando-fl/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/tampa-fl/</loc></url>
+  <url><loc>https://firedamage.vercel.app/florida/west-palm-beach-fl/</loc></url>
   <url><loc>https://firedamage.vercel.app/hvac-duct-cleaning/</loc></url>
+  <url><loc>https://firedamage.vercel.app/illinois/aurora-il/</loc></url>
+  <url><loc>https://firedamage.vercel.app/illinois/chicago-il/</loc></url>
+  <url><loc>https://firedamage.vercel.app/illinois/</loc></url>
+  <url><loc>https://firedamage.vercel.app/illinois/naperville-il/</loc></url>
   <url><loc>https://firedamage.vercel.app/</loc></url>
   <url><loc>https://firedamage.vercel.app/insurance-claims/</loc></url>
   <url><loc>https://firedamage.vercel.app/kitchen-fire-damage/</loc></url>
@@ -41,10 +62,12 @@
   <url><loc>https://firedamage.vercel.app/texas/dallas-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/dallas-tx/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/dallas-tx/kitchen-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/dallas-tx/smoke-odor-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/dallas-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/fort-worth-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/fort-worth-tx/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/fort-worth-tx/kitchen-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/fort-worth-tx/smoke-odor-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/fort-worth-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/frisco-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/frisco-tx/</loc></url>
@@ -53,6 +76,7 @@
   <url><loc>https://firedamage.vercel.app/texas/houston-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/houston-tx/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/houston-tx/kitchen-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/houston-tx/smoke-odor-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/houston-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/katy-tx/board-up-services/</loc></url>
@@ -63,7 +87,10 @@
   <url><loc>https://firedamage.vercel.app/texas/mckinney-tx/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/mckinney-tx/kitchen-fire-damage/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/mckinney-tx/soot-removal/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/new-braunfels-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/new-braunfels-tx/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/new-braunfels-tx/kitchen-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/new-braunfels-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/pearland-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/pearland-tx/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/pearland-tx/kitchen-fire-damage/</loc></url>
@@ -74,6 +101,8 @@
   <url><loc>https://firedamage.vercel.app/texas/plano-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/san-antonio-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/san-antonio-tx/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/san-antonio-tx/kitchen-fire-damage/</loc></url>
+  <url><loc>https://firedamage.vercel.app/texas/san-antonio-tx/smoke-odor-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/san-antonio-tx/soot-removal/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/sugar-land-tx/board-up-services/</loc></url>
   <url><loc>https://firedamage.vercel.app/texas/sugar-land-tx/</loc></url>
